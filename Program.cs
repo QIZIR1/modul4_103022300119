@@ -7,7 +7,12 @@ class Program
     {
         KodeProduk KodeProduk = new KodeProduk();
 
-        Console.Write("Masukkan Kode Produk: ");
+        Console.Write("Masukkan nama Produk: ");
         string elektronik = Console.ReadLine();
+
+        Console.WriteLine("Kode Produk: " + KodeProduk.GetKodeProduk(elektronik));
+
+        FanLaptop fan = new FanLaptop();
+        fan.tes();
     }
 }
